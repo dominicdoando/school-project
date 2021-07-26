@@ -281,7 +281,7 @@
 	<script src="{{ asset('admin/assets/vendor_components/easypiechart/dist/jquery.easypiechart.js') }}"></script>
 	<script src="{{ asset('admin/assets/vendor_components/apexcharts-bundle/irregular-data-series.js') }}"></script>
 	<script src="{{ asset('admin/assets/vendor_components/apexcharts-bundle/dist/apexcharts.js') }}"></script>
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.js" integrity="sha512-zlWWyZq71UMApAjih4WkaRpikgY9Bz1oXIW5G0fED4vk14JjGlQ1UmkGM392jEULP8jbNMiwLWdM8Z87Hu88Fw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<!-- Sunny Admin App -->
 	<script src="{{ asset('admin/js/template.js') }}"></script>
 	<script src="{{ asset('admin/js/pages/dashboard.js') }}"></script>

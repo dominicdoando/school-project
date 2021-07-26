@@ -8,8 +8,11 @@
   @include('body.header')
   @include('body.sidebar')
   <div class="content-wrapper">
-	  <div class="container-full">
-
+	  <div class="container-fluid pt-3">
+      <div class="alert alert-success alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ Session('message') }}
+      </div>
         @yield('master_admin')
 	  </div>
   </div>
