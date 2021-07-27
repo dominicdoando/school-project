@@ -16,6 +16,7 @@
         @yield('master_admin')
 	  </div>
   </div>
+
   <!-- /.content-wrapper -->
 
   @include('body.footer')

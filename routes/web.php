@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\UserController;
+use App\Http\Controllers\Backend\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,4 +37,13 @@ Route::prefix('user')->group(function(){
     ROUTE::get('/edit/{id}', [UserController::class, 'UserEdit'])->name('user.edit');
     ROUTE::post('/update/{id}', [UserController::class, 'UserUpdate'])->name('user.update');
     ROUTE::get('/delete/{id}', [UserController::class, 'UserDelete'])->name('user.delete');
+});
+
+// USER PROFILE & PASSWORD
+Route::prefix('profile')->group(function(){
+    ROUTE::get('/view', [ProfileController::class, 'ViewProfile'])->name('profile.view');
+    ROUTE::get('/edit', [ProfileController::class, 'EditProfile'])->name('profile.edit');
+    ROUTE::post('/storage', [ProfileController::class, 'StorageProfile'])->name('profile.storage');
+    ROUTE::get('/password/view', [ProfileController::class, 'PasswordView'])->name('password.view');
+    ROUTE::post('/password/update', [ProfileController::class, 'PasswordUpdate'])->name('password.update');
 });
